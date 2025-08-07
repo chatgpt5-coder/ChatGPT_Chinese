@@ -1,160 +1,186 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 核心：标题 + 描述 + 关键词 -->
-    <title>2025 ChatGPT5 中文版国内使用指南 | 支持 GPT-5/GPT-5-mini 全系列，免翻墙直连</title>
-    <meta name="description" content="2025 最新 ChatGPT5 中文版国内使用教程，支持 GPT-5/GPT-5-mini/GPT-5-namo/GPT-5-chat 全系列，含合法访问渠道、功能对比、使用场景，点击了解更多 AI 工具！">
-    <meta name="keywords" content="ChatGPT5 中文版, GPT-5 国内使用, GPT-5-mini 访问, ChatGPT5 国内渠道">
-    <!-- 样式与脚本 -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-            .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChatGPT5 中文版国内使用指南 | GPT-5/GPT-5-mini 全系列免翻墙直连</title>
+  <meta name="description" content="2025 最新 ChatGPT5 中文版国内使用教程，支持 GPT-5/GPT-5-mini 全系列免翻墙直连，附功能对比、国内访问渠道及官网与中文版区别说明"/>
+  <meta name="keywords" content="ChatGPT5 中文版, GPT-5 国内使用, GPT-5-mini 免翻墙, ChatGPT 官网区别"/>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<!-- 导航栏（SEO 友好：关键词融入链接） -->
 <header class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-            <i class="fa fa-comments text-blue-600 text-2xl"></i>
-            <h1 class="text-xl font-bold text-blue-600">ChatGPT5 中文站</h1>
-        </div>
-        <nav class="hidden md:flex space-x-8">
-            <a href="#models" class="text-gray-600 hover:text-blue-600 transition">GPT-5 全系列</a>
-            <a href="#channels" class="text-gray-600 hover:text-blue-600 transition">国内访问</a>
-            <a href="#guide" class="text-gray-600 hover:text-blue-600 transition">使用教程</a>
-        </nav>
-        <button class="md:hidden text-gray-600">
-            <i class="fa fa-bars text-xl"></i>
-        </button>
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <i class="fa fa-comments text-blue-600 text-2xl"></i>
+      <h1 class="text-xl font-bold text-blue-600">ChatGPT5 中文站</h1>
     </div>
+    <nav class="hidden md:flex space-x-8">
+      <a href="#models" class="text-gray-600 hover:text-blue-600 transition">GPT-5 全系列</a>
+      <a href="#channels" class="text-gray-600 hover:text-blue-600 transition">国内访问</a>
+      <a href="#guide" class="text-gray-600 hover:text-blue-600 transition">使用教程</a>
+    </nav>
+    <button class="md:hidden text-gray-600">
+      <i class="fa fa-bars text-xl"></i>
+    </button>
+  </div>
 </header>
 
-<!-- 英雄区（核心关键词前置） -->
 <section class="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-16 md:py-24">
-    <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-            <h1 class="text-3xl md:text-5xl font-bold mb-6 text-shadow">2025 ChatGPT5 中文版国内使用指南</h1>
-            <p class="text-lg md:text-xl opacity-90 mb-8">支持 GPT-5/GPT-5-mini 全系列，免翻墙直连 | 附功能对比 + 国内合法渠道</p>
-            <!-- 跳转引导（首屏弱引导，避免影响 SEO） -->
-            <a href="https://yyai8.com/" 
-               target="_blank" 
-               class="inline-block bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition mt-4">
-                探索更多 AI 工具 <i class="fa fa-arrow-right ml-2"></i>
-            </a>
-        </div>
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-3xl md:text-5xl font-bold mb-6 text-shadow">2025 ChatGPT5 中文版国内使用指南</h1>
+      <p class="text-lg md:text-xl opacity-90 mb-4" id="current-date-display">当前日期：<span id="current-date"></span></p>
+      <p class="text-lg md:text-xl opacity-90 mb-8">支持 GPT-5/GPT-5-mini 全系列，免翻墙直连 | 附功能对比 + 国内访问渠道</p>
+      <a href="https://yyai8.com/" 
+         target="_blank" 
+         class="inline-block bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition mt-4">
+        探索更多 AI 工具 <i class="fa fa-arrow-right ml-2"></i>
+      </a>
     </div>
+  </div>
 </section>
 
-<!-- 模型详解（SEO 关键词密集区） -->
 <section id="models" class="py-12 md:py-16 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">GPT-5 全系列模型对比</h2>
-        <!-- 模型卡片（埋入“国内”“合规”等关键词） -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div class="bg-white rounded-xl p-6 card-hover">
-                <h3 class="text-xl font-bold mb-3">GPT-5（国内合规版）</h3>
-                <p class="text-gray-600 mb-4">多模态交互 + 长文本处理，国内合规访问</p>
-            </div>
-            <div class="bg-white rounded-xl p-6 card-hover">
-                <h3 class="text-xl font-bold mb-3">GPT-5-mini（国内快速版）</h3>
-                <p class="text-gray-600 mb-4">轻量化部署，国内秒级响应</p>
-            </div>
-            <div class="bg-white rounded-xl p-6 card-hover">
-                <h3 class="text-xl font-bold mb-3">GPT-5-namo（垂直领域版）</h3>
-                <p class="text-gray-600 mb-4">编程/教育专项优化，适配国内场景</p>
-            </div>
-            <div class="bg-white rounded-xl p-6 card-hover">
-                <h3 class="text-xl font-bold mb-3">GPT-5-chat（对话增强版）</h3>
-                <p class="text-gray-600 mb-4">情感交互升级，国内聊天更自然</p>
-            </div>
-        </div>
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">GPT-5 全系列模型对比</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div class="bg-white rounded-xl p-6 card-hover">
+        <h3 class="text-xl font-bold mb-3">GPT-5（国内版）</h3>
+        <p class="text-gray-600 mb-4">多模态交互 + 长文本处理，免翻墙直接访问</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 card-hover">
+        <h3 class="text-xl font-bold mb-3">GPT-5-mini（国内快速版）</h3>
+        <p class="text-gray-600 mb-4">轻量化部署，国内秒级响应，无需翻墙</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 card-hover">
+        <h3 class="text-xl font-bold mb-3">GPT-5-namo（垂直领域版）</h3>
+        <p class="text-gray-600 mb-4">编程/教育专项优化，适配国内场景，免翻墙</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 card-hover">
+        <h3 class="text-xl font-bold mb-3">GPT-5-chat（对话增强版）</h3>
+        <p class="text-gray-600 mb-4">情感交互升级，国内聊天更自然，直接使用</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- 国内访问渠道（SEO 核心：解决用户痛点） -->
 <section id="channels" class="py-12 md:py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">国内合法访问渠道</h2>
-        <div class="max-w-3xl mx-auto space-y-6">
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">官方合作平台</h3>
-                <p class="text-gray-600 mb-3">通过国内企业与 OpenAI 合作平台，安全访问 GPT-5 全系列，支持手机号/邮箱注册</p>
-            </div>
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">合规 AI 聚合站</h3>
-                <p class="text-gray-600 mb-3">集成 GPT-5 系列模型，提供免费体验额度，国内网络直连</p>
-            </div>
-            <!-- 强跳转引导（内容末尾自然引导） -->
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">想体验独家工具？</h3>
-                <p class="text-gray-600 mb-6">我们整理了 <strong>国内 AI 工具清单</strong>，含 ChatGPT5 优化版 + 独家功能，点击跳转：</p>
-                <a href="https://yyai8.com/" 
-                   target="_blank" 
-                   class="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition">
-                    前往 yyai8 探索 <i class="fa fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">国内访问渠道</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">主流服务平台</h3>
+        <p class="text-gray-600 mb-3">国内正规AI服务平台提供的GPT-5系列服务，支持手机号/邮箱注册，无需翻墙即可稳定使用</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">AI聚合服务站</h3>
+        <p class="text-gray-600 mb-3">集成多种GPT-5系列模型的国内服务平台，提供免费体验额度，国内网络直连，免翻墙即可使用</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">想体验独家工具？</h3>
+        <p class="text-gray-600 mb-6">我们整理了 <strong>国内 AI 工具清单</strong>，含 ChatGPT5 优化版 + 独家功能，免翻墙直接用，点击跳转：</p>
+        <a href="https://yyai8.com/" 
+           target="_blank" 
+           class="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition">
+          前往 探索 <i class="fa fa-arrow-right ml-2"></i>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- 使用教程（长尾关键词覆盖） -->
 <section id="guide" class="py-12 md:py-16 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">GPT-5 国内使用教程</h2>
-        <div class="max-w-3xl mx-auto space-y-6">
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">步骤 1：选择合规平台</h3>
-                <p class="text-gray-600 mb-3">推荐官方合作平台或聚合站，避免非法镜像站风险</p>
-            </div>
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">步骤 2：注册与实名认证</h3>
-                <p class="text-gray-600 mb-3">国内平台需完成实名认证，确保合规使用</p>
-            </div>
-            <div class="border border-gray-200 rounded-xl p-6">
-                <h3 class="text-xl font-bold mb-4">步骤 3：选择模型与功能</h3>
-                <p class="text-gray-600 mb-3">根据需求切换 GPT-5 全系列模型，体验多模态交互</p>
-            </div>
-        </div>
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">GPT-5 国内使用教程</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">步骤 1：选择访问平台</h3>
+        <p class="text-gray-600 mb-3">推荐国内主流服务平台或聚合站，无需配置翻墙工具，直接访问</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">步骤 2：注册与登录</h3>
+        <p class="text-gray-600 mb-3">国内平台支持手机号快速注册，无需海外账号，注册后直接使用</p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-4">步骤 3：选择模型与功能</h3>
+        <p class="text-gray-600 mb-3">根据需求切换 GPT-5 全系列模型，免翻墙即可体验多模态交互</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- 页脚（合规声明 + 跳转） -->
-<footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-            <p class="mb-4">© 2025 ChatGPT5 中文站 | 内容原创，未经授权禁止转载</p>
-            <a href="https://yyai8.com/" 
-               target="_blank" 
-               class="text-blue-300 hover:text-white transition">
-                前往 yyai8 探索更多 <i class="fa fa-arrow-right ml-2"></i>
-            </a>
-        </div>
+<section class="py-12 md:py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">ChatGPT 官网与中文版区别</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="border border-gray-200 rounded-xl p-6">
+        <ul class="text-gray-700 list-disc pl-6">
+          <li><strong>访问限制</strong>：官网需翻墙访问，中文版支持国内直连无需翻墙</li>
+          <li><strong>功能适配</strong>：中文版针对中文语境优化语义理解，官网更侧重英文生态</li>
+          <li><strong>使用门槛</strong>：官网需注册海外账号，中文版支持国内手机号/简易注册</li>
+          <li><strong>数据安全</strong>：中文版符合国内数据合规要求，官网数据存储遵循海外政策</li>
+          <li><strong>特色功能</strong>：中文版集成 DeepSeek 等国内适配工具，官网以原生功能为主</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="mb-4">© 2025 ChatGPT5 中文站 | 内容原创，未经授权禁止转载</p>
+      <a href="https://yyai8.com/" 
+         target="_blank" 
+         class="text-blue-300 hover:text-white transition">
+        前往 yyai8 探索更多 <i class="fa fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
 </footer>
 
-<!-- 跳转统计（可选，分析流量） -->
 <script>
-    // 点击跳转时统计（可对接 Google Analytics 或百度统计）
-    const links = document.querySelectorAll('a[href="https://yyai8.com/"]');
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            console.log('用户点击了跳转链接到 yyai8');
-            // 替换为实际统计代码，示例（Google Analytics）：
-            // if (typeof ga !== 'undefined') {
-            //     ga('send', 'event', 'ChatGPT5', '跳转', 'yyai8');
-            // }
-        });
+
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+  const day = String(currentDate.getDate()).padStart(2, '0');
+  const formattedDate = `${year}/${month}/${day}`;
+  document.getElementById('current-date').textContent = formattedDate;
+
+ 
+  const links = document.querySelectorAll('a[href="https://yyai8.com/"]');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      console.log('用户点击了跳转链接到 yyai8');
+      // 替换为实际统计代码，示例（Google Analytics）：
+      // if (typeof ga !== 'undefined') {
+      //   ga('send', 'event', 'ChatGPT5', '跳转', 'yyai8');
+      // }
     });
+  });
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5ec0cce5664cf8e13a72bf7a67010068";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
 </body>
 </html>
+    
