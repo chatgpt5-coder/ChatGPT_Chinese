@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 指向你的站点地图
+Sitemap: https://chatgpt5-coder.github.io/ChatGPT_Chinese/sitemap.xml
